@@ -36,15 +36,15 @@ zgadnijButton.addEventListener('click', function checkGuess() {
 
     if (userGuess == luckyNumber) {
 
-      console.log("Brawo, zgadłaś/eś!");
+      console.log("Bravo! Gut geraten.");
 
       $('.tomusizniknac').fadeOut('slow');
 
-      document.getElementById("wynik").innerHTML = "<h1>Brawo, zgadłaś/eś!</h1><p>Twoja szczęśliwa liczba to: </p>"+luckyNumber
+      document.getElementById("wynik").innerHTML = "<h1>Bravo! Gut geraten.</h1><p>Deine glückliche Zahl ist: </p>"+luckyNumber
 
     }else if (userGuess > luckyNumber) {
 
-      console.log("Twoja liczba jest za duza"+userGuess);
+      console.log("Deine Zahl ist zu groß"+userGuess);
 
       document.getElementById("info").style.color = "red"
 
