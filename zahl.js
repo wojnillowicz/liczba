@@ -48,7 +48,7 @@ zgadnijButton.addEventListener('click', function checkGuess() {
 
       document.getElementById("info").style.color = "red"
 
-      document.getElementById("info").innerHTML = "Twoja liczba jest za duża!"
+      document.getElementById("info").innerHTML = "Deine Zahl ist zu groß!"
 
       count ++
 
@@ -60,15 +60,15 @@ zgadnijButton.addEventListener('click', function checkGuess() {
 
       zaDuza.appendChild(duzaLiczba);
 
-      document.getElementById("pozostalo").innerHTML = "Pozostało prób: "+(10-count)
+      document.getElementById("pozostalo").innerHTML = "Verbleibende Versuche: "+(10-count)
 
     }else {
 
-      console.log("Twoja liczba jest za mala"+userGuess);
+      console.log("Deine Zahl ist zu klein: "+userGuess);
 
       document.getElementById("info").style.color = "green"
 
-      document.getElementById("info").innerHTML = "Twoja liczba jest za mała!"
+      document.getElementById("info").innerHTML = "Deine Zahl ist zu klein!"
 
       count ++
 
@@ -80,7 +80,7 @@ zgadnijButton.addEventListener('click', function checkGuess() {
 
       zaMala.appendChild(malaLiczba);
 
-      document.getElementById("pozostalo").innerHTML = "Pozostało prób: "+(10-count)
+      document.getElementById("pozostalo").innerHTML = "Verbleibende Versuche: "+(10-count)
 
       }
 
@@ -90,7 +90,7 @@ zgadnijButton.addEventListener('click', function checkGuess() {
 
     $('.tomusizniknac').fadeOut('slow');
 
-    document.getElementById("wynik").innerHTML = "<h1>Game over</h1>Wykorzystałaś/eś wszystkie próby...<br> Spróbuj jeszcze raz!"
+    document.getElementById("wynik").innerHTML = "<h1>Game over</h1>Leider hast du alle deine Versuche verbraucht...<br> Probier es noch einmal!"
 
   }
 
